@@ -1,0 +1,37 @@
+{{#> layout currentPage = 'Add Provinsi'}}
+
+<link rel="stylesheet" href="/assets/addProvinsi.css" />
+
+<form class="row g-3 add-provinsi" id="form-provinsi" action="/add-provinsi" method="POST"
+    enctype="multipart/form-data">
+
+    <h2 style="text-align: center;">Add Provinsi</h2>
+
+    <div class="col-12 form_field">
+        <label for="nama" class="form-label fw-bold">Nama Provinsi</label>
+        <input name="nama" type="text" class="form-control" id="nama" placeholder="Masukkan nama provinsi" required>
+    </div>
+
+    <div class="col-md-6 form_field">
+        <label for="diresmikan" class="form-label fw-bold">Diresmikan</label>
+        <input name="diresmikan" type="date" class="form-control" id="diresmikan" required>
+    </div>
+
+    <div class="col-12 form_field">
+        <label for="photo" class="form-label fw-bold">Photo</label>
+        <input type="file" name="photo" class="form-control" required>
+        <small class="text-muted">Hanya file gambar yang diperbolehkan</small>
+    </div>
+
+    <div class="col-12 form_field">
+        <label for="pulau" class="form-label fw-bold">Pulau</label>
+        <input name="pulau" type="text" class="form-control" id="pulau" placeholder="Masukkan nama pulau" required>
+    </div>
+
+    <div class="col-12 button_container" id="project-button">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</form>
+<script src="/js/provinsi.js"></script>
+{{/layout}}
